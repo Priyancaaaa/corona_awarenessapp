@@ -1,0 +1,1054 @@
+body {
+  font-family: consolas;
+  background: #1a1a1a;
+  overflow-x: hidden;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+#title {
+  text-align: center;
+  color: white;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 800px) {
+  #menubar {
+    background-image: linear-gradient(
+      to right,
+      grey,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      grey
+    );
+    text-align: center;
+    font-size: 15px;
+    color: white;
+  }
+
+  #menubar li {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: black;
+    margin-left: 10px;
+    font-size: 140%;
+    color: white;
+  }
+
+  #menubar li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #menubar li:hover {
+    background: grey;
+    border-radius: 3px;
+    color: black;
+    font-size: 150%;
+  }
+
+  #menubar .active {
+    background-color: grey;
+    color: black;
+    border-radius: 3px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #menubar {
+    background-image: linear-gradient(
+      to right,
+      grey,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      grey
+    );
+    font-size: 15px;
+    color: white;
+  }
+
+  #menubar li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: black;
+    margin-left: 10px;
+    font-size: 140%;
+    width: 90%;
+    color: white;
+  }
+
+  #menubar ul a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #menubar li:hover {
+    background: grey;
+    border-radius: 3px;
+    color: black;
+    font-size: 150%;
+  }
+
+  #menubar .active {
+    background-color: grey;
+    color: black;
+    border-radius: 3px;
+  }
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  width: 100%;
+  height: 75%;
+  overflow: hidden;
+  position: relative;
+  margin-left: 5%;
+}
+
+.slideshow-container img {
+  height: 100%;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-flex;
+  transition: background-color 0.8s ease;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  width: 90%;
+  height: 100%;
+  display: inline-block;
+}
+
+.active {
+  background-color: #717171;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .slideshow-container {
+    height: 50%;
+  }
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+.DATA {
+  padding: 0 1% 0 0;
+  color: white;
+  margin-left: 5%;
+  width: 90%;
+}
+
+.DATA img {
+  width: 100%;
+  height: 35%;
+}
+
+@media only screen and (max-width: 480px) {
+  .DATA {
+    color: white;
+    padding: 0 1% 0 0;
+    width: 97.5%;
+    margin-left: 2.5%;
+  }
+
+  .DATA img {
+    height: 20%;
+  }
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+
+.AWARENESS {
+  width: 100%;
+  height: 55%;
+  padding: 0 1% 0 0;
+  font-size: 100%;
+  margin-left: 5%;
+  font-family: consolas;
+  border-top: 1px solid WHITE;
+  border-bottom: 1px solid WHITE;
+}
+
+.AWARENESS h1 {
+  color: WHITE;
+}
+
+.AWARENESS1 {
+  width: 28%;
+  height: 250px;
+  padding: 0 0 0 2%;
+  float: left;
+  color: white;
+}
+
+.AWARENESS2 {
+  width: 28%;
+  height: 250px;
+  position: relative;
+  top: -250px;
+  padding: 0 1% 0 1%;
+  margin-top: 270px;
+  margin-left: 32.5%;
+}
+
+.AWARENESS3 {
+  width: 28%;
+  height: 250px;
+  position: relative;
+  margin-top: -500px;
+  padding: 0 2% 0 0;
+  float: right;
+  margin-right: 5%;
+}
+
+.AWARENESS img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.AWARENESS img:hover {
+  box-shadow: 0 0 10px 2px white;
+  width: 102%;
+  height: 102%;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 1180px) {
+  .column {
+    float: left;
+    width: 28.5%;
+    padding: 10px;
+    height: 400px;
+    position: relative;
+    top: -80px;
+    border-radius: 4px;
+  }
+
+  .BLOCK1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .BLOCK1 h1 {
+    margin-left: 5%;
+  }
+
+  .DONATE {
+    font-size: 100%;
+    background-color: red;
+    border-style: groove;
+    border-radius: 7px;
+  }
+
+  .DONATE img {
+    width: 100%;
+    margin-top: -3%;
+  }
+
+  .DONATE h1 {
+    margin-top: 3%;
+    margin-left: 2%;
+    color: white;
+  }
+
+  .blink1 a {
+    animation: blinkingText 4s infinite;
+    text-decoration: none;
+  }
+
+  .blink1:hover {
+    font-size: 105%;
+  }
+
+  @keyframes blinkingText {
+    0% {
+      color: white;
+    }
+    40% {
+      color: transparent;
+    }
+    75% {
+      color: white;
+    }
+    99% {
+      color: transparent;
+    }
+    100% {
+      color: white;
+    }
+  }
+
+  .DONATE h2 {
+    float: right;
+    background-color: red;
+    font-size: 160%;
+  }
+
+  /*/////////////////////////////////////////////////////////////////////////////////////////*/
+  .LN {
+    font-size: 110%;
+    background-image: linear-gradient(
+      to top right,
+      gray,
+      white,
+      gray,
+      white,
+      white,
+      white,
+      gray,
+      white,
+      gray
+    );
+    border-style: groove;
+    position: relative;
+    border-radius: 7px;
+    height: 90%;
+  }
+
+  .LN a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .LN h1 {
+    border-bottom: 1px solid black;
+    margin-left: 2%;
+    margin-top: 1%;
+  }
+  .news {
+    text-align: left;
+    margin-left: 50px;
+    font-family: consolas;
+    margin-top: -1%;
+  }
+  .news:hover {
+    background-image: linear-gradient(
+      to right,
+      black,
+      gray,
+      gray,
+      gray,
+      gray,
+      gray,
+      gray,
+      gray,
+      gray,
+      white
+    );
+    font-size: 105%;
+    opacity: 0.8;
+  }
+  /*/////////////////////////////////////////////////////////////////////////////////////////*/
+  #STAT {
+    background-color: red;
+    border-radius: 7px;
+    border-style: groove;
+    position: relative;
+  }
+
+  .sm h2 {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    float: right;
+    font-size: 160%;
+  }
+
+  #STAT h1 {
+    margin-top: 3%;
+    margin-left: 2%;
+    color: white;
+  }
+
+  #STAT img {
+    margin-top: -3.5%;
+  }
+
+  .sm {
+    text-decoration: none;
+    color: white;
+  }
+
+  .sm:hover {
+    font-size: 105%;
+    color: white;
+  }
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width: 1180px) {
+  .column {
+    padding: 10px;
+    position: relative;
+  }
+
+  .BLOCK1 h1 {
+    margin-left: 5%;
+  }
+
+  .DONATE {
+    font-size: 100%;
+    background-color: red;
+    border-style: groove;
+    border-radius: 7px;
+    width: 100%;
+    height: 50%;
+  }
+
+  .DONATE h1 {
+    margin-left: 2%;
+    color: white;
+  }
+
+  .blink1 a {
+    animation: blinkingText 4s infinite;
+    text-decoration: none;
+  }
+
+  .blink1 a:hover {
+    font-size: 115%;
+    animation: none;
+    text-decoration: none;
+    color: white;
+  }
+
+  @keyframes blinkingText {
+    0% {
+      color: white;
+    }
+    40% {
+      color: transparent;
+    }
+    75% {
+      color: white;
+    }
+    99% {
+      color: transparent;
+    }
+    100% {
+      color: white;
+    }
+  }
+
+  .blink1 {
+    float: right;
+    font-size: 130%;
+  }
+
+  .slideshow2-container2 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .fade2 {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  .active2 {
+    background-color: #717171;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  /*/////////////////////////////////////////////////////////////////////////////////////////*/
+  .LN {
+    font-size: 110%;
+    background-image: linear-gradient(
+      to top right,
+      gray,
+      white,
+      gray,
+      white,
+      white,
+      white,
+      gray,
+      white,
+      gray
+    );
+    border-style: groove;
+    position: relative;
+    border-radius: 7px;
+    margin-left: 5%;
+  }
+
+  .LN a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .LN h1 {
+    border-bottom: 1px solid black;
+    margin-left: 2%;
+    margin-top: 1%;
+  }
+
+  .news {
+    text-align: left;
+    margin-left: 50px;
+    margin-top: -1%;
+  }
+
+  .news:hover {
+    background-image: linear-gradient(
+      to right,
+      black,
+      gray,
+      gray,
+      gray,
+      gray,
+      gray,
+      gray,
+      gray,
+      gray,
+      white
+    );
+    font-size: 105%;
+    opacity: 0.8;
+  }
+  /*/////////////////////////////////////////////////////////////////////////////////////////*/
+  #STATISTICS {
+    background-color: red;
+    border-radius: 7px;
+    border-style: groove;
+    height: 50%;
+    position: relative;
+    margin-left: 5%;
+  }
+
+  .sm h2 {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    float: right;
+    font-size: 160%;
+    margin-top: 3%;
+  }
+
+  #STAT h1 {
+    margin-left: 2%;
+    color: white;
+  }
+
+  #STAT img {
+    width: 50%;
+    margin-top: -2%;
+  }
+
+  .sm {
+    text-decoration: none;
+    color: white;
+  }
+
+  .sm:hover {
+    font-size: 105%;
+    color: white;
+  }
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width: 480px) {
+  .column {
+    padding: 10px;
+    position: relative;
+  }
+
+  .BLOCK1 h1 {
+    margin-left: 5%;
+  }
+
+  .DONATE {
+    font-size: 100%;
+    background-color: red;
+    border-style: groove;
+    border-radius: 7px;
+    width: 100%;
+    height: 50%;
+  }
+
+  .DONATE h1 {
+    margin-left: 2%;
+    color: white;
+  }
+
+  .blink1 a {
+    animation: blinkingText 4s infinite;
+    text-decoration: none;
+  }
+
+  .blink1 a:hover {
+    font-size: 115%;
+    animation: none;
+    text-decoration: none;
+    color: white;
+  }
+
+  @keyframes blinkingText {
+    0% {
+      color: white;
+    }
+    40% {
+      color: transparent;
+    }
+    75% {
+      color: white;
+    }
+    99% {
+      color: transparent;
+    }
+    100% {
+      color: white;
+    }
+  }
+
+  .blink1 {
+    float: right;
+    font-size: 130%;
+  }
+
+  .DONATE img {
+    margin-top: -10%;
+  }
+
+  .slideshow2-container2 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .fade2 {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  .active2 {
+    background-color: #717171;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  /*/////////////////////////////////////////////////////////////////////////////////////////*/
+  .LN {
+    font-size: 110%;
+    background-image: linear-gradient(
+      to top right,
+      gray,
+      white,
+      gray,
+      white,
+      white,
+      white,
+      gray,
+      white,
+      gray
+    );
+    border-style: groove;
+    position: relative;
+    border-radius: 7px;
+    margin-left: 5%;
+  }
+
+  .LN a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .LN h1 {
+    border-bottom: 1px solid black;
+    margin-left: 2%;
+    margin-top: 1%;
+  }
+
+  .news {
+    text-align: left;
+    margin-left: 50px;
+    margin-top: -1%;
+  }
+
+  .news:hover {
+    background-image: linear-gradient(
+      to right,
+      black,
+      gray,
+      gray,
+      gray,
+      gray,
+      gray,
+      gray,
+      gray,
+      gray,
+      white
+    );
+    font-size: 105%;
+    opacity: 0.8;
+  }
+  /*/////////////////////////////////////////////////////////////////////////////////////////*/
+  #STATISTICS {
+    background-color: red;
+    border-radius: 7px;
+    border-style: groove;
+    height: 50%;
+    position: relative;
+    margin-left: 5%;
+  }
+
+  .sm h2 {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    float: right;
+    margin-top: 7%;
+  }
+
+  #STAT h1 {
+    margin-left: 2%;
+    color: white;
+  }
+
+  #STAT img {
+    width: 50%;
+    margin-top: -2%;
+  }
+
+  .sm {
+    text-decoration: none;
+    color: white;
+  }
+
+  .sm:hover {
+    font-size: 115%;
+    color: white;
+  }
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+#block2 {
+  background-image: linear-gradient(
+    to right,
+    red,
+    orangered,
+    orange,
+    orange,
+    orange,
+    orange,
+    orange,
+    orange,
+    orange,
+    orange,
+    orangered,
+    red
+  );
+  font-size: 160%;
+  text-align: center;
+  color: black;
+  margin: auto;
+  position: relative;
+  top: 0px;
+}
+
+#block2 a {
+  text-decoration: none;
+  color: black;
+  margin-left: 2%;
+}
+
+#block2 a:hover {
+  text-decoration: underline;
+  font-size: 105%;
+  color: white;
+}
+
+@media only screen and (max-width: 480px) {
+  #block2 {
+    font-size: 100%;
+  }
+
+  #block2 a {
+    text-decoration: none;
+    color: black;
+    margin-left: 7%;
+  }
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+.F1 {
+  position: relative;
+  top: -30px;
+}
+
+.column2 {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  position: relative;
+  top: -60px;
+  border-radius: 4px;
+}
+
+.column21:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column21 {
+  margin-left: 4%;
+}
+
+.footer {
+  width: 100%;
+  height: 66%;
+  background-color: #26272b;
+  color: #737373;
+}
+
+.footer a {
+  color: #737373;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  font-size: 115%;
+  color: white;
+}
+
+.footer h4 {
+  color: white;
+}
+
+.column2 h4 {
+  color: white;
+  margin-left: 5%;
+}
+
+.footer li {
+  margin-top: 2%;
+}
+
+.F1 {
+  width: 80%;
+  font-size: 110%;
+  margin-left: 7%;
+}
+
+.F2 {
+  font-size: 110%;
+  width: 100%;
+}
+
+.F3 {
+  font-size: 110%;
+  width: 100%;
+  float: left;
+  height: 62%;
+}
+
+@media only screen and (max-width: 480px) {
+  .footer {
+    width: 100%;
+    height: 55%;
+    font-size: 90%;
+  }
+
+  .column2 h4 {
+    color: white;
+    margin-left: 25%;
+  }
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+
+.cr {
+  float: left;
+  width: 45%;
+  padding: 10px;
+  position: relative;
+}
+
+.socialbar {
+  float: right;
+  width: 45%;
+  padding: 10px;
+  position: relative;
+}
+
+.colun:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.social li {
+  display: inline;
+}
+
+.socialbar img {
+  margin-left: 4%;
+  width: 15%;
+  height: 7%;
+}
+
+.socialbar img:hover {
+  width: 17%;
+  height: 9%;
+}
+
+.cr {
+  color: white;
+}
+
+.cr a {
+  color: white;
+}
+
+.cr a:hover {
+  color: white;
+  font-size: 115%;
+}
+
+@media only screen and (max-width: 480px) {
+  .cr {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    top: -60px;
+  }
+
+  .socialbar {
+    float: right;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    top: -60px;
+  }
+
+  .socialbar img {
+    margin-left: 6%;
+    width: 15%;
+    height: 7%;
+  }
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
